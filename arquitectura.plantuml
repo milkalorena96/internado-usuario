@@ -1,0 +1,12 @@
+@startuml Ecommerce
+
+
+package "Retiro de inquilinos" {
+
+    [Postman] -down-> [Internado]
+    [Internado] -right-> [DB Internado]
+    [Internado] -down-> [Usuarios]
+    [Usuarios] -right-> [DB Usuarios]
+}
+
+@enduml
